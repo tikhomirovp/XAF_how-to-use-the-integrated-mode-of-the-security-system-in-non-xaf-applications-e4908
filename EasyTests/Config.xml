@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Options xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TestRunTimeLimit="3">
+	<Applications>
+		<!-- Win -->
+		<Application
+			Name="WinForms"
+			FileName="[ConfigPath]\..\WinForms\CS\bin\Release"
+			AdapterFileName="[ConfigPath]\..\WinForms\CS\bin\Release\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll"
+			CommunicationPort="4100"/>
+		<!-- Web -->
+		<!-- <Application -->
+			<!-- Name="XafSolutionWeb" -->
+			<!-- Url="http://localhost:4030" -->
+			<!-- PhysicalPath="[ConfigPath]\..\XCRM.Web" -->
+			<!-- AdapterFileName="[ConfigPath]\..\XCRM.Web\bin\DevExpress.ExpressApp.EasyTest.WebAdapter.v19.2.dll" -->
+			<!-- UseIISExpress="True" -->
+			<!-- IgnoreCase="true"/> -->
+	</Applications>
+	<TestDatabases>
+		<Database xsi:type="TestMSSQLDatabase" Server="(localdb)\mssqllocaldb" Name="XafSolution" DBName="XafSolution"/>
+	</TestDatabases>
+</Options>
