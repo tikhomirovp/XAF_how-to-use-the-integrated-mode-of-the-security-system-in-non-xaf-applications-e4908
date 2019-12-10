@@ -4,7 +4,7 @@
 		<!-- Win -->
 		<Application
 			Name="WinForms"
-			FileName="[ConfigPath]\..\XafSolution\XafSolution.Win\bin\Release"
+			FileName="[ConfigPath]\..\XafSolution\XafSolution.Win\bin\Release\XafSolution.Win.exe"
 			AdapterFileName="[ConfigPath]\..\XafSolution\XafSolution.Win\bin\Release\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll"
 			CommunicationPort="4100"/>
 		<!-- Web -->
