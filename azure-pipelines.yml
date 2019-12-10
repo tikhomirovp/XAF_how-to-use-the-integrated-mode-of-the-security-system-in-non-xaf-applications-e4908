@@ -39,12 +39,11 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: |
-      param(
-      [string]$easyTestPath=".\EasyTests", 
-      [string]$easyTestBinPath=".\EasyTestBin",
-      [string]$WinBinPath="XafSolution\XafSolution.Win\bin\Release",
-      ) 
+    script: |     
+      $easyTestPath=".\EasyTests"
+      $easyTestBinPath=".\EasyTestBin"
+      WinBinPath="XafSolution\XafSolution.Win\bin\Release"
+      
       
       sqllocaldb start MSSQLLocalDB
       
