@@ -3,7 +3,7 @@
 	<Applications>
 		<!-- Win -->
 		<Application
-			Name="WinForms"
+			Name="XafSolution"
 			FileName="[ConfigPath]\..\XafSolution\XafSolution.Win\bin\EasyTest\XafSolution.Win.exe"
 			AdapterFileName="[ConfigPath]\..\XafSolution\XafSolution.Win\bin\EasyTest\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll"
 			CommunicationPort="4100"/>

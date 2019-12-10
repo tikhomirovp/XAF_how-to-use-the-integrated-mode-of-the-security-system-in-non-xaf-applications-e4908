@@ -1,10 +1,11 @@
 #DropDB XafSolution
 
-#Application WinForms
+#Application XafSolution
 
 *FillForm
- User Name = Administrator
+ User Name = Admin
 
+*Sleep 5000
 *Action Log In
 
 
