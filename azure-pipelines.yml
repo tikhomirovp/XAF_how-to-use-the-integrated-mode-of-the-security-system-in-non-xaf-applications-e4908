@@ -37,6 +37,7 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: PowerShell@2
+  displayName: EasyTest
   inputs:
     targetType: 'inline'
     script: |     
