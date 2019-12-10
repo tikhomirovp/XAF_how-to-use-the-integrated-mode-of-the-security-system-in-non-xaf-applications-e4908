@@ -42,7 +42,7 @@ steps:
     script: |     
       $easyTestPath=".\EasyTests"
       $easyTestBinPath=".\EasyTestBin"
-      WinBinPath="XafSolution\XafSolution.Win\bin\Release"
+      $WinBinPath="XafSolution\XafSolution.Win\bin\Release"
       
       
       sqllocaldb start MSSQLLocalDB
