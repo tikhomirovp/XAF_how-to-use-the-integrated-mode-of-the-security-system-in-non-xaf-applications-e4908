@@ -7,7 +7,7 @@ pool:
 variables:
   solution: 'NonXAFSecurityExamples.sln'
   buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+  buildConfiguration: 'EasyTest'
 
 steps:
 - task: NuGetToolInstaller@1
@@ -43,7 +43,7 @@ steps:
     script: |     
       $easyTestPath=".\EasyTests"
       $easyTestBinPath=".\EasyTestBin"
-      $WinBinPath=".\XafSolution\XafSolution.Win\bin\Release"
+      $WinBinPath=".\XafSolution\XafSolution.Win\bin\EasyTest"
       
       
       sqllocaldb start MSSQLLocalDB
