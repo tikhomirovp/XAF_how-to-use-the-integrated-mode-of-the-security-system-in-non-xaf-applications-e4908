@@ -1,4 +1,4 @@
-#DropDB XafSolution
+#DropDB XafSolutionEasyTest
 
 #Application XafSolution
 

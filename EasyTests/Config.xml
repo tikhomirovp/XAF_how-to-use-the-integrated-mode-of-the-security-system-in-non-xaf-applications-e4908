@@ -17,6 +17,6 @@
 			<!-- IgnoreCase="true"/> -->
 	</Applications>
 	<TestDatabases>
-		<Database xsi:type="TestMSSQLDatabase" Server="(localdb)\mssqllocaldb" Name="XafSolutionEasyTest" DBName="XafSolution"/>
+		<Database xsi:type="TestMSSQLDatabase" Server="(localdb)\mssqllocaldb" Name="XafSolutionEasyTest" DBName="XafSolutionEasyTest"/>
 	</TestDatabases>
 </Options>
