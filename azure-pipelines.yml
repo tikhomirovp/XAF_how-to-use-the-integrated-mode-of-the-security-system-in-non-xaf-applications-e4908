@@ -46,4 +46,11 @@ steps:
             
             Dir -Recurse "easytest\Bin\" | Get-Childitem
             
-            .\easytest\Bin\TestExecutor.v19.2.exe EasyTests
+            .\easytest\Bin\TestExecutor.v19.2.exe .\EasyTests
+
+- task: PublishPipelineArtifact@1
+  condition: succeededOrFailed()
+  inputs:
+    targetPath: '.\EasyTests\'
+    artifact: 'TestsResultFiles'
+    publishLocation: 'pipeline'
