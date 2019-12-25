@@ -5,7 +5,7 @@
 		<Application
 			Name="XafSolution"
 			FileName="[ConfigPath]\..\XafSolution\XafSolution.Win\bin\EasyTest\XafSolution.Win.exe"
-			AdapterFileName="[ConfigPath]\..\XafSolution\XafSolution.Win\bin\EasyTest\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll"
+			AdapterFileName="[ConfigPath]\..\easytest\Bin\DevExpress.ExpressApp.EasyTest.WinAdapter.v19.2.dll"
 			CommunicationPort="4100"/>
 		<!-- Web -->
 		<!-- <Application -->
