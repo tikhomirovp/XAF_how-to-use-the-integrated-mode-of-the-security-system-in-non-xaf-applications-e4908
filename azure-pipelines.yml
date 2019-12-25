@@ -35,7 +35,15 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
+- task: PowerShell@2
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    targetType: 'inline'
+    script: |
+      Nuget install DevExpress.EasyTest.TestExecutor -OutputDirectory easyTest -configfile NuGet.config
+            
+            New-Item -ItemType directory -Path "easytest\Bin\"
+            Get-ChildItem -Path "easytest\*" -Include *.dll,*.exe -Recurse | Copy-Item -Destination "easytest\Bin\"
+            
+            Dir -Recurse "easytest\Bin\" | Get-Childitem
+            
+            .\easytest\Bin\TestExecutor.v19.2.exe EasyTests
