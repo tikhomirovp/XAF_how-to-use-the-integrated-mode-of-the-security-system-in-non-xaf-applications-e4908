@@ -45,7 +45,7 @@ steps:
       New-Item -ItemType directory -Path "easytest\Bin\"
       Get-ChildItem -Path "easytest\*" -Include *.dll,*.exe -Recurse | Where {$_.FullName -notlike "*\netstandard*\*"} | Copy-Item -Destination "EasyTest\Bin\"
       .\easytest\Bin\TestExecutor.v19.2.exe $easyTestPath
-      if(Select-String -Pattern 'Result="Failed"', 'Result="Warning"' -Path $easyTestPath + "\TestsLog.xml) { exit 1 }
+      if(Select-String -Pattern 'Result="Failed"', 'Result="Warning"' -Path $easyTestPath + \TestsLog.xml) { exit 1 }
 
 - task: PublishPipelineArtifact@1
   condition: succeededOrFailed()
