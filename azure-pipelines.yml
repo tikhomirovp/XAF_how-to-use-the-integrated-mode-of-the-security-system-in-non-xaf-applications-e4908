@@ -41,7 +41,7 @@ steps:
     script: |
       $easyTestPath=".\EasyTests"
       sqllocaldb start MSSQLLocalDB
-      Copy-Item "C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll" Destination "EasyTest\Bin\"
+      Copy-Item "C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll" -Destination "EasyTest\Bin\"
       New-Item -ItemType directory -Path "easytest\Bin\"
       Get-ChildItem -Path "easytest\*" -Include *.dll,*.exe -Recurse | Where {$_.FullName -notlike "*\netstandard*\*"} | Copy-Item -Destination "EasyTest\Bin\"
       .\easytest\Bin\TestExecutor.v19.2.exe $easyTestPath
